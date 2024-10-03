@@ -1,0 +1,86 @@
+Hey, welcome to my bio! This is just a text version of what may or may not already be on my CV:
+
+I am completing my final year of undergraduate studies at UT Austin and have a substantial amount of data science and economics experience from numerous corporate, government, and academic research positions.
+
+
+**Experience 1**
+
+United States Air Force and Space Force
+
+Data Science Intern
+
+Arlington County, Virginia
+
+05/24
+08/24
+
+Migrated ETL pipelines to Databricks Delta Lakes and PySpark, with visualization dashboards in Tableau and web apps in Plotly Dash, modernizing more than 2 billion dollars in space contract cost analyses which were done in Excel
+
+Introduced and documented Git hosted in AWS S3 as an unifying version control system for future data science analyses
+
+---
+
+**Experience 2**
+
+Snap Inc.
+
+Augmented Reality (AR) Development Extern
+
+Remote
+
+02/24
+03/24
+
+Developed AR filters and renders for Snapchat, optimizing some filter render times and effectiveness by up to 13%
+
+Recognized as a program standout for innovative AI integrated solutions and board presentations in AR media initiatives
+
+---
+
+**Experience 3**
+
+Founder Institute
+
+Operations Intern
+
+Austin, Texas
+
+05/23
+08/23
+
+Enhanced startup onboarding processes by implementing data-driven optimizations, reducing onboarding time
+
+Supported startups in resource allocation through meticulous data analysis, facilitating strategic decision-making
+
+---
+
+**Experience 4**
+
+Baylor College of Medicine Head and Neck Cancer Research Lab
+
+Undergraduate Bioinformatics Research Assistant
+
+Houston, Texas
+
+01/22
+03/23
+
+Built vcfeather, a library for next-generation sequencing analysis in Pandas, PyTorch, and containerized with Docker
+
+Co-authored 3 publications that use my bioinformatic programs, notably in Nature: ”Evolution of Cisplatin Resistance”
+
+---
+**Contact Information**
+
+Mitch Frederick, Mitchell.Frederick@bcm.edu, 713-515-6514
+Sarah Greene, sarah.green.10@us.af.mil, 760-481-5796
+William Kim, william.kim.11@us.af.mil, 703-424-0364
+
+---
+
+https://jawadkazi.github.io/
+
+https://www.linkedin.com/in/jawadkazi/
+
+---
+
