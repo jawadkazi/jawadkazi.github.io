@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+        tailwind.config = {
+          plugins: [
+            function ({ addVariant }) {
+              addVariant('dark', '&:where(.dark, .dark *)');
+            }
+          ]
+        }
+    </script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4.0.12/dist/index.global.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Tailwind Theme Toggle</title>
+    <!-- Inline script to set theme before rendering to avoid FOUC -->
+    <script>
+      if (localStorage.theme === "dark") {
+        document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+  </head>
+  <body>
+    <button id="theme-toggle">Toggle Theme</button>
+    <div class="content">
+      <p>This is some sample content.</p>
+    </div>
+    <script>
+      const toggleButton = document.getElementById("theme-toggle");
+
+      toggleButton.addEventListener("click", () => {
+        // Toggle the dark class on the html element
+        if (document.documentElement.classList.contains("dark")) {
+          document.documentElement.classList.remove("dark");
+          localStorage.theme = "light"; // Explicitly choose light mode
+        } else {
+          document.documentElement.classList.add("dark");
+          localStorage.theme = "dark"; // Explicitly choose dark mode
+        }
+      });
+      
+      // To respect OS preference again, you can remove the stored theme:
+      // localStorage.removeItem("theme");
+    </script>
+  </body>
+</html>

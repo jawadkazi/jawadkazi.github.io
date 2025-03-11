@@ -1,36 +1,37 @@
 <!doctype html>
-<html>
+<html class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- three amazing embedded libraries -->
     <script src="https://unpkg.com/@tailwindcss/browser@4.0.12/dist/index.global.js"></script>
     <script src="https://unpkg.com/htmx.org@1.9.12/dist/htmx.min.js"></script>
     <script src="https://unpkg.com/preact@10.26.4/dist/preact.min.js"></script>
-    
   </head>
-  <body>
-    <div class="container mx-auto mt-16 max-w-3xl text-[14px]">
+  <body class="bg-white">
+    <div class="container mx-auto mt-16 max-w-3xl text-[14px] font-serif">
       <div class="grid grid-cols-2 gap-4">
         <div>
-            <div class="text-3xl">Jawad Kazi</div>
+            <div class="text-2xl">
+              Jawad Kazi
+            </div>
+            <!-- <button onclick="changeTheme()">☼ ☾</button>  -->
             <div>
-                <br>
+                kazijawadahmed [at] gmail [dot] com
+                <br><br>
                 I am an undergrad senior math student at UT Austin and a full-time data scientist
                 at Avathon, a unicorn ml startup in Austin. Some things I'm interested in: embedded/cdn
                 web dev (htmx + unocss), pb-scale gpu text parsing, tiny llms.
             </div>
             <div>
                 <p>
-                    <br>
-                    email: kazijawadahmed [at] gmail [dot] com
-                    <br>
-                    <a href="#">cv</a>
-                    /
-                    <a href="#">blog</a>
-                    /
-                    <a href="#">github</a>
+                    <br><br>
+                    <a href="https://sapa-usa.org/donations/sapa-fundraising-campaign-p2p/" class="text-blue-500 underline">donate to sudan</a>
+                    //
+                    <a href="resume_jawad_kazi.pdf" class="text-blue-500 underline">resume</a>
+                    //
+                    <a href="https://github.com/jawadkazi" class="text-blue-500 underline">github</a>
+                    
                     <br><br>
                     <p><i>I am on the left in the photo, my dad is on the right</i></p>
                 </p>
@@ -38,24 +39,43 @@
         </div>
         
         <div>
-            <img src="profile.jpg" style="max-width: 300px; height: auto;" />
+            <img src="profile.jpg" style="max-width: 250px; height: auto;" />
         </div>
 
-        <div class="col-span-2 bg-gray-200">
-            My experiences can be divided into internships, freelance, projects, competitions, and academic research.
-            Notably: I was previously at the US Air Force and Space Force Cost Analysis Agency as a data science intern,
-            Snap Inc. as an augmented reality development extern, and Founder Institute as an operations intern, and at
-            Baylor College of Medicine's otolaryngology lab as an undergraduate bioinformatics research assistant.
-            Aside from research and work, I regularly compete in hackathons or organize other events;
-            a select few standout projects and contributions are displayed below, including my submission to Ebay's
-            invitational NER competition, my winning markov chain employee simulation model for Marsh Mclennan's business
-            analytics competition, and a website I developed for the annual 8000 person conference, hamun.
-            Finally, I do tutoring and freelance data science work. For inquiries to either, or related, please contact me personally here.
-        </div>
-        <div class="col-span-2 bg-gray-200">
-            My experiences can be divided into internships, freelance, projects, competitions, and academic research.
+        <div class="col-span-2">
+            In chronological order, starting first semester at UT: I did research at Baylor College of Medicine, 
+            entrepreneurship at Founder's Institute Austin, an externship at Snap Inc, 
+            and an internship at US Air Force Cost Analysis Agency. I'm now at Avathon, 
+            working in the data science team to build an AI platform for BAE Systems.
+            
+            <br>‎ 
         </div>
       </div>
+
+      <hr class="w-full border-1 h-px">
+<!--       
+      <div class="col-span-2" id="blogContainer">
+        <br>
+        <p class="text-xl">Blog</p>
+        <br>
+        <div class="group hover:bg-stone-300">
+          <p class="group-hover:underline">javascript environment setup</p>
+          <p class="group-hover:underline">3/10/25</p>
+        </div>
+        <br>
+        <p>javascript environment setup</p>
+        <p>3/10/25</p>
+      </div>
     </div>
+
+    <script>
+      const blogContainer = document.getElementById('blogContainer');
+      for (let i = 1; i <= 10; i++) {
+        console.log('hello world');
+        const p = document.createElement('p');
+        p.textContent = `paragraph ${i}`;
+        blogContainer.appendChild(p);
+      }
+    </script> -->
   </body>
 </html>
