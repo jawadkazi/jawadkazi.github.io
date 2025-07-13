@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TryCoast 🚀</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      color: #333;
+      background-color: #fafafa;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      background: #eef;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+    }
+    .emoji { font-size: 1.2em; }
+  </style>
+</head>
+<body>
+  <h1>TryCoast <span class="emoji">🏄‍♂️</span></h1>
+
+  <p><strong>Minimize friction. Maximize flow.</strong> TryCoast is on a mission to shrink the gap between your thoughts and your messages, emails, or tasks. Imagine swiping—simple, fluid gestures replacing clicks and keystrokes—powered by generative AI.</p>
+
+  <h2>🖥️ Desktop &amp; Mobile Experience</h2>
+  <ul>
+    <li><strong>Caps Lock Binding</strong>: Hit <code>Caps Lock</code> to enable the swipe overlay on your laptop. No invasive toolbars—just you and the words flowing.</li>
+    <li><strong>Four-Directional Swipes</strong>:
+      <ul>
+        <li><code>Swipe ↑</code> to pivot your message tone (formal → casual).</li>
+        <li><code>Swipe →</code> to autocomplete and advance.</li>
+        <li><code>Swipe ↓</code> to revert or undo the last AI suggestion.</li>
+        <li><code>Swipe ←</code> to discard or exit to manual typing.</li>
+      </ul>
+    </li>
+    <li><strong>Phone-First</strong>: A single-finger gesture transforms your draft—no keyboard contortions needed.</li>
+  </ul>
+
+  <h2>🤖 Under the Hood: Generative AI &amp; RAG</h2>
+  <p>TryCoast leverages <code>ChatGPT</code>-style transformers fine-tuned for short-form communication. We integrate <strong>Retrieval-Augmented Generation (RAG)</strong> by fetching your recent emails, calendar entries, and notes as context vectors. This ensures that each swipe is informed, accurate, and personalized:</p>
+  <pre><code>context = retrieve_documents(user_email_history, calendar_events)
+prompt  = build_prompt(user_input, context)
+output  = ai_model.generate(prompt)
+</code></pre>
+  <p>By blending on-device embeddings with cloud-based inference, we strike the balance between privacy and power. Our pipeline supports adaptive prompts, context window sliding, and dynamic token budgeting—pushing state-of-the-art research into your everyday workflow.</p>
+
+  <h2>🔬 Research &amp; Future</h2>
+  <p>Recent papers on <em>gesture-based text editing</em> and <em>multimodal AI assistants</em> inspire our roadmap. We’re exploring attention-based UI adaptations, contextual memory graphs, and real-time latency optimizations. Expect features like:</p>
+  <ul>
+    <li>Semantic swipe gestures: trigger deep edits (summarize, translate, expand) with custom swipes.</li>
+    <li>Context-aware noise injection: randomized phrasing to avoid AI-stamp pitfalls.</li>
+    <li>Plug-in architecture for external data sources (GitHub, Slack, CRM systems).</li>
+  </ul>
+
+  <p>Join the movement towards ultimate frictionless communication. Let your ideas coast from mind to message—every swipe a step closer to effortless expression.</p>
+
+  <footer>
+    <p>© 2025 TryCoast Inc. — <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+  </footer>
+</body>
+</html>
